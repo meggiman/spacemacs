@@ -22,7 +22,9 @@
         helm-make
         helm-mode-manager
         helm-projectile
-        helm-swoop
+        (helm-swoop :location (recipe
+                               :fetcher github
+                               :repo "emacsorphanage/helm-swoop"))
         helm-themes
         (helm-spacemacs-help :location local)
         (helm-spacemacs-faq :location local)
